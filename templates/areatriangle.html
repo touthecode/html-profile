@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area of a Triangle</title>
+</head>
+<body>
+    <h1>Provide base and height for the triangle</h1>
+
+    <form action="/areaOftriangle" method="post">
+        <label for="inputBase">Enter the value of base:</label>
+        <input type="number" id="inputBase" name="inputBase"><br><br>
+        <label for="inputHeight">Enter the value of height:</label>
+        <input type="number" id="inputHeight" name="inputHeight"><br>
+        <input type="submit" value="Compute">
+    </form>
+
+    {% if result %}
+    <p>Area of the Triangle: {{ result }}</p>
+    {% endif %}
+    <style>
+        body {
+            background-color: rgb(102,205,170);
+            color: rgb(0, 0, 0);
+            font-family: "Helvetica", "Arial", sans-serif;
+            font-size: 1.3em;
+        }
+    
+        a {
+            color: rgb(255, 111, 111);
+        }
+    </style>
+</body>
+</html>
